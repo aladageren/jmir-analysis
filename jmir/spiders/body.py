@@ -6,7 +6,12 @@ import re
 class BodySpider(scrapy.Spider):
     name = 'body'
     allowed_domains = ['www.jmir.org']
-    start_urls = ['http://www.jmir.org/2018/6/e215/']
+    start_urls = ['http://www.jmir.org/2018/6/e215/',
+                  'http://www.jmir.org/2018/8/e245',
+                  'http://www.jmir.org/2018/8/e246',
+                  'http://www.jmir.org/2018/8/e10231',
+                  'http://www.jmir.org/2018/8/e244'
+                  ]
 
     def parse(self, response: scrapy.http.Response):
         url = response.url

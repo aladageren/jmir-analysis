@@ -6,7 +6,12 @@ from collections import OrderedDict
 class XmlSpider(scrapy.Spider):
     name = 'xmlspider'
     allowed_domains = ['www.jmir.org']
-    start_urls = ['http://www.jmir.org/2018/6/e215/xml']
+    start_urls = ['http://www.jmir.org/2018/6/e215/xml',
+                  'http://www.jmir.org/2018/8/e245/xml',
+                  'http://www.jmir.org/2018/8/e246/xml',
+                  'http://www.jmir.org/2018/8/e10231/xml',
+                  'http://www.jmir.org/2018/8/e244/xml'
+                  ]
 
     def text_to_int(text):
         try:

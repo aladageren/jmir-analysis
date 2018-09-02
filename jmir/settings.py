@@ -88,7 +88,7 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-"""
+
 HTTPCACHE_ENABLED = True
 HTTPCACHE_STORAGE = 'scrapy.contrib.httpcache.FilesystemCacheStorage'
 HTTPCACHE_DIR = '/home/eren/scrapy-cache/jmir/'
@@ -98,4 +98,3 @@ DOWNLOADER_MIDDLEWARES = {
         'scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware': 100,
         'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 200,
 }
-"""
