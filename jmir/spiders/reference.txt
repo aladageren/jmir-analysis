@@ -1,0 +1,11 @@
+ol = response.xpath('//div[@class="footnotes"]/ol')
+
+reference_urls = []
+
+for span in ol.xpath('./li/span'):
+    print(span.xpath('./text()').extract()) # Text
+    try:
+        reference_urls.append(span.xpath('./a[@target="_blank"]/@href').extract()) # Url
+    except:
+        reference_urls.append("")
+

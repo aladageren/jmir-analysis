@@ -1,0 +1,31 @@
+response
+response.xpath("/root/div/node()[not (@class='bad')]")
+response.xpath("//article[@class=main-article]") #/div/node()[not (@class='bad')]")
+response.xpath("//article[contains(@classmain-article]") #/div/node()[not (@class='bad')]")
+response.xpath("//article[contains(@class, 'main-article']") #/div/node()[not (@class='bad')]")
+response.xpath("//article[contains(@class, 'main-article')]") #/div/node()[not (@class='bad')]")
+response.xpath("//article[contains(@class, 'main-article')]")[0]
+response.xpath("//article[contains(@class, 'main-article')]/p")[0]
+response.xpath("//article[contains(@class, 'main-article')]/p")
+response.xpath("//article[contains(@class, 'main-article')]") #/div/node()[not (@class='bad')]")
+response.xpath("//article[contains(@class, 'main-article')]/p")[0]
+%history 
+
+
+
+class Hede:
+    def __init__(self):
+        self.x = 3
+        self._y = 4
+        self.__z = 5
+h = Hede()
+dir(h)
+h.z = 89
+h.z
+h._Hede__z
+h._Hede__z = 39
+h._Hede__z
+    h._Hede__z = 39
+%history
+
+
